@@ -1,0 +1,184 @@
+:root {
+	--c:#82c;
+}
+
+.m {
+	color:#c4f;
+}
+/* Fix for summary's odd hitbox, by moving it to inline,
+ * and fixing the list-style-type by replacing it
+ * with the :before contents and :after as a new line
+ */
+/* summary { */
+	/* list-style-type:none; */
+	/* display:inline; */
+/* } */
+/* details > summary:before { */
+	/* content: "\25BA\20"; */
+/* } */
+/* details[open] > summary:before { */
+	/* content: "\25BC\20"; */
+/* } */
+/* summary:after { */
+	/* white-space: pre; */
+	/* content:"\A"; */
+/* } */
+
+hr {
+	margin: 8px -8px;
+	border:1px solid var(--c);
+	border-bottom-style: none;
+}
+
+summary {
+	border-bottom-width:1px;
+}
+
+summary:hover {
+	cursor: pointer;
+}
+summary:active {
+	color:#ff33c1;
+	background:
+	linear-gradient(
+		rgba(136,34,204,0.25),
+		rgba(136,34,204,0.25)
+	),
+	linear-gradient(
+		#fff 1px,
+		#f7f0fc 1px,
+		#e7d3f5 50%,
+		#cfa7eb 50%,
+		#dfc4f1
+	);
+}
+summary {
+	padding: 4px;
+	border: 1px solid var(--c);
+	box-sizing: border-box;
+	height: 37px;
+	background:
+	linear-gradient(
+		#fff 1px,
+		#f7f0fc 1px,
+		#e7d3f5 50%,
+		#cfa7eb 50%,
+		#dfc4f1
+	);
+}
+select {
+	border: 1px solid var(--c);
+	color:var(--c);
+	text-shadow: 0 1px rgba(255,255,255,0.5);
+	background:
+	linear-gradient(
+		#fff 1px,
+		#f7f0fc 1px,
+		#e7d3f5 50%,
+		#cfa7eb 50%,
+		#dfc4f1
+	);
+}
+option {
+	color: initial;
+}
+details div {
+	padding: 0 8px;
+}
+details {
+	margin: 8px 0;
+}
+body {
+	background:#fff;
+	/*display:inline-block;*/
+	border:1px solid var(--c);
+	width:800px;
+	margin:8px auto;
+}
+
+hr {
+	color:var(--c);
+}
+
+header {
+	margin:0 8px 8px 8px;
+}
+
+html {
+	font-family:"Verdana",sans-serif;
+	font-size: larger;
+	text-shadow: 0 1px rgba(255,255,255,0.5);
+	color:var(--c);
+	
+	background:
+	repeating-linear-gradient(
+		transparent 0px,
+		transparent 32px,
+		rgba(255, 16, 255, 0.05) 32px,
+		rgba(255, 16, 255, 0.05) 64px
+	),
+	repeating-linear-gradient(90deg,
+		transparent 0px,
+		transparent 32px,
+		rgba(192, 32, 192, 0.05) 32px,
+		rgba(192, 32, 192, 0.05) 64px
+	),
+	
+	/*repeating-linear-gradient(90deg,
+		transparent 0px,
+		transparent 24px,
+		rgba(192, 32, 192, 0.1) 24px,
+		rgba(192, 32, 192, 0.1) 32px
+	),
+	repeating-linear-gradient(
+		transparent 0px,
+		transparent 24px,
+		rgba(255, 16, 255, 0.1) 24px,
+		rgba(255, 16, 255, 0.1) 32px
+	),
+	*/
+	repeating-linear-gradient(135deg,
+		transparent 0px,
+		transparent 45.254833995939041561654039px,
+		rgba(192, 32, 192, 0.1) 45.254833995939041561654039px,
+		rgba(192, 32, 192, 0.1) 90.509667991878083123308078px
+	),
+	linear-gradient(90deg,
+		#fff,
+		#fff
+	);
+	
+}
+
+img {
+	vertical-align:middle;
+	height:64px;
+	width:64px;
+}
+select {
+	font-size:smaller;
+}
+table {
+	margin:0 -1px -1px -1px;
+}
+table, th, td {
+	/*background:rgba(255,255,255,0.5);*/
+	border:1px solid var(--c);
+	border-collapse:collapse;
+}
+th, td {
+	padding: 4px;
+}
+td:nth-of-type(4) {
+	font-size:x-small;
+	color:#888;
+}
+a[href*="../"] {
+	color:#20c;
+}
+a[href*="../"]:hover {
+	color:#f0f;
+}
+a[href*="../"]:active {
+	color:#fcf;
+}
